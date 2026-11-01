@@ -4,7 +4,7 @@ A live camera picture is captured, compressed in hardware using the core steps o
 
 **Platform:** Terasic DE2-115 (Altera Cyclone IV E EP4CE115F29C7) + TRDB-D5M 5 MP camera + VGA monitor
 
-![Live camera demo: original on the left, compressed on the right](results/camera_demo_1.jpg)
+![Live camera demo: original on the left, compressed on the right](results/res_dragon.jpg)
 
 ## Features
 
@@ -97,12 +97,26 @@ run -all
 | Measure | Value |
 |---|---|
 | Image size | 320 x 320, 24-bit colour (2,457,600 bits) |
-| Memory saved | about 90-97 %, depending on the scene and the SW1-SW0 setting |
+| Memory saved | 93.4 % to 98.0 % measured on the board, depending on the scene and the SW1-SW0 setting |
 | Compression time | 0.22 s per picture at 25 MHz |
 | Live mode | about 3-4 pictures per second |
 | On-chip memory | about 2.87 Mbit (about 350 of 432 M9K blocks) |
 
-![Second test scene](results/camera_demo_2.jpg)
+### Four compression levels (SW1-SW0 = 00, 01, 10, 11)
+
+![Stored test image at four compression levels](results/res_amongus.jpg)
+
+### Four Bayer colour orders (SW3-SW2), order 1 gives natural colours
+
+![Colour order settings](results/res_globe.jpg)
+
+### Memory saved on the seven-segment display
+
+![Memory saved readings](results/res_hex.jpg)
+
+### Setup
+
+![Camera aimed at the test scenes](results/res_setup.jpg)
 
 **Limitation:** the compressed size is counted with fixed 8-bit run-length symbols. A complete JPEG encoder would add Huffman coding and save a further 20-30 %. A faster, parallel DCT would allow full-speed video.
 
@@ -116,4 +130,4 @@ Mini project, Digital System Design with FPGA, Vellore Institute of Technology.
 | Abinash R | 26MVD0104 |
 | Dev Vijay | 26MVD0093 |
 
-Submitted to: Dr. Jagannadha Naidu K
+Submitted to: Jagannadha Naidu K
