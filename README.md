@@ -116,4 +116,4 @@ Mini project, Digital System Design with FPGA, Vellore Institute of Technology.
 | Abinash R | 26MVD0104 |
 | Dev Vijay | 26MVD0093 |
 
-Submitted to: Jagannadha Naidu K
+Submitted to: Dr. Jagannadha Naidu K
